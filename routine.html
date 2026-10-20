@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexFlow | My Routine</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">FlexFlow</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="stretches.html">Stretch Library</a>
+      <a href="routine.html">My Routine</a>
+    </nav>
+    <button id="theme-toggle" class="small-button" type="button">🌙 Dark Mode</button>
+  </header>
+
+  <main class="page-container">
+    <p class="eyebrow">YOUR COOLDOWN, YOUR WAY</p>
+    <h1>Build Your Routine</h1>
+    <p class="page-intro">Select the muscle groups you trained. FlexFlow will suggest a cooldown you can follow at your own pace.</p>
+
+    <section class="routine-builder">
+      <h2>What did you work out today?</h2>
+      <p>Select one or more muscle groups.</p>
+
+      <div class="checkbox-grid">
+        <label class="check-card">
+          <input type="checkbox" name="muscle" value="legs">
+          <span>🦵 Legs</span>
+        </label>
+        <label class="check-card">
+          <input type="checkbox" name="muscle" value="glutes">
+          <span>🍑 Glutes</span>
+        </label>
+        <label class="check-card">
+          <input type="checkbox" name="muscle" value="back">
+          <span>🏋️ Back</span>
+        </label>
+        <label class="check-card">
+          <input type="checkbox" name="muscle" value="upper">
+          <span>💪 Upper Body</span>
+        </label>
+        <label class="check-card">
+          <input type="checkbox" name="muscle" value="core">
+          <span>🧘 Core</span>
+        </label>
+      </div>
+
+      <button id="generate-routine" class="button" type="button">Generate My Routine →</button>
+      <p id="routine-message" class="message" aria-live="polite"></p>
+    </section>
+
+    <section id="routine-results" class="routine-results" hidden>
+      <div class="results-heading">
+        <div>
+          <p class="eyebrow">READY WHEN YOU ARE</p>
+          <h2>Your Stretching Plan</h2>
+          <p id="routine-summary"></p>
+        </div>
+        <button id="print-routine" class="button secondary" type="button">Print Routine</button>
+      </div>
+
+      <div id="routine-list" class="routine-list"></div>
+
+      <section class="timer-card">
+        <p class="eyebrow">STRETCH TIMER</p>
+        <h2 id="timer-display">00:30</h2>
+        <p id="timer-status" aria-live="polite">Ready to begin? Choose a stretch and start your timer.</p>
+        <div class="timer-buttons">
+          <button id="start-timer" class="button" type="button">Start 30 Seconds</button>
+          <button id="reset-timer" class="button secondary" type="button">Reset Timer</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>FlexFlow © 2026 · Stop if a stretch causes pain or discomfort.</p>
+  </footer>
+</body>
+</html>
