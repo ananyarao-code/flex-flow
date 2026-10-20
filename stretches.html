@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexFlow | Stretch Library</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">FlexFlow</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="stretches.html">Stretch Library</a>
+      <a href="routine.html">My Routine</a>
+    </nav>
+    <button id="theme-toggle" class="small-button" type="button">🌙 Dark Mode</button>
+  </header>
+
+  <main class="page-container">
+    <p class="eyebrow">EXPLORE AND RECOVER</p>
+    <h1>Stretch Library</h1>
+    <p class="page-intro">Find a comfortable stretch for the muscles you trained today.</p>
+
+    <div class="filter-bar">
+      <label for="stretch-filter">Filter by muscle group:</label>
+      <select id="stretch-filter">
+        <option value="all">All Stretches</option>
+        <option value="legs">Legs</option>
+        <option value="glutes">Glutes</option>
+        <option value="back">Back</option>
+        <option value="upper">Upper Body</option>
+        <option value="core">Core</option>
+      </select>
+    </div>
+
+    <section id="stretch-list" class="stretch-grid">
+      <article class="stretch-card" data-group="legs">
+        <span class="tag">LEGS</span>
+        <h2>Standing Quad Stretch</h2>
+        <p>Stand tall, bend one knee, and gently bring your heel toward your glutes. Hold a wall for balance if needed.</p>
+        <p class="stretch-time">Hold: 20–30 seconds per side</p>
+      </article>
+
+      <article class="stretch-card" data-group="legs">
+        <span class="tag">LEGS</span>
+        <h2>Hamstring Stretch</h2>
+        <p>Extend one leg with your heel on the floor and gently hinge forward at your hips, keeping your back comfortable.</p>
+        <p class="stretch-time">Hold: 20–30 seconds per side</p>
+      </article>
+
+      <article class="stretch-card" data-group="glutes">
+        <span class="tag">GLUTES</span>
+        <h2>Figure-Four Stretch</h2>
+        <p>Lie on your back, cross one ankle over the opposite thigh, and gently draw the supporting leg toward you.</p>
+        <p class="stretch-time">Hold: 20–30 seconds per side</p>
+      </article>
+
+      <article class="stretch-card" data-group="glutes">
+        <span class="tag">GLUTES</span>
+        <h2>Knees-to-Chest Stretch</h2>
+        <p>Lie on your back and gently bring your knees toward your chest without forcing the movement.</p>
+        <p class="stretch-time">Hold: 20–30 seconds</p>
+      </article>
+
+      <article class="stretch-card" data-group="back">
+        <span class="tag">BACK</span>
+        <h2>Child's Pose</h2>
+        <p>Kneel, sit your hips back toward your heels, and reach your arms forward as far as feels comfortable.</p>
+        <p class="stretch-time">Hold: 20–30 seconds</p>
+      </article>
+
+      <article class="stretch-card" data-group="back">
+        <span class="tag">BACK</span>
+        <h2>Cat-Cow Stretch</h2>
+        <p>On your hands and knees, slowly round your back and then gently arch it while breathing steadily.</p>
+        <p class="stretch-time">Repeat: 6–8 slow cycles</p>
+      </article>
+
+      <article class="stretch-card" data-group="upper">
+        <span class="tag">UPPER BODY</span>
+        <h2>Cross-Body Shoulder Stretch</h2>
+        <p>Bring one arm across your chest and gently support it with the opposite arm.</p>
+        <p class="stretch-time">Hold: 20–30 seconds per side</p>
+      </article>
+
+      <article class="stretch-card" data-group="upper">
+        <span class="tag">UPPER BODY</span>
+        <h2>Chest Opener</h2>
+        <p>Stand tall, bring your arms gently behind you, and open your chest without arching your lower back.</p>
+        <p class="stretch-time">Hold: 20–30 seconds</p>
+      </article>
+
+      <article class="stretch-card" data-group="core">
+        <span class="tag">CORE</span>
+        <h2>Gentle Cobra Stretch</h2>
+        <p>Lie on your stomach and gently lift your chest using your arms only as much as feels comfortable.</p>
+        <p class="stretch-time">Hold: 10–20 seconds</p>
+      </article>
+
+      <article class="stretch-card" data-group="core">
+        <span class="tag">CORE</span>
+        <h2>Side Stretch</h2>
+        <p>Stand tall, raise one arm, and lean gently to the opposite side without twisting.</p>
+        <p class="stretch-time">Hold: 20 seconds per side</p>
+      </article>
+    </section>
+
+    <p id="no-stretches" hidden>No stretches found for this group.</p>
+  </main>
+
+  <footer>
+    <p>FlexFlow © 2026 · Move gently and stay within a comfortable range.</p>
+  </footer>
+</body>
+</html>
