@@ -147,11 +147,47 @@ nav a:hover {
   font-size: 1.1rem;
 }
 
+/* Homepage image */
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  max-height: 350px;
+  object-fit: cover;
+  margin: 30px auto;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
 .hero-buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+/* Homepage benefits list */
+.benefits {
+  margin: 50px auto 0;
+  max-width: 600px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 25px 30px;
+}
+
+.benefits h2 {
+  text-align: center;
+}
+
+.benefits-list {
+  display: inline-block;
+  margin: 20px auto;
+  padding-left: 24px;
+  text-align: left;
+  color: var(--muted);
+  line-height: 2;
 }
 
 .feature-grid, .stretch-grid {
@@ -328,6 +364,10 @@ select {
   margin: 0;
 }
 
+.routine-item .stretch-time {
+  margin-top: 10px;
+}
+
 .routine-item.completed {
   opacity: 0.65;
 }
@@ -451,3 +491,4 @@ body.dark-mode .message {
     width: 100%;
   }
 }
+
